@@ -30,7 +30,7 @@ gunicorn -b 0.0.0.0:8001 --reload src.app
 
 ## Run with instrumentation SigNoz
 ```
-OTEL_RESOURCE_ATTRIBUTES=service.name=flaconApp OTEL_EXPORTER_OTLP_ENDPOINT="<IP of SigNoz>:4317" opentelemetry-instrument gunicorn src.app -b 0.0.0.0:8001
+OTEL_RESOURCE_ATTRIBUTES=service.name=flaconApp OTEL_EXPORTER_OTLP_ENDPOINT="http://<IP of SigNoz>:4317" opentelemetry-instrument gunicorn src.app -b 0.0.0.0:8001
 ```
 
 ## Start browsing application and checkout data at SigNoz's UI
