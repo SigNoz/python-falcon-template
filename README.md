@@ -5,7 +5,7 @@ A sample template for Python Falcon API application.
 
 ## Install application dependencies
 ```
-pip install -r requirements/base.txt
+pip3 install -r requirements/base.txt
 ```
 ```
 opentelemetry-bootstrap --action=install
