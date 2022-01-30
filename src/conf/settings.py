@@ -19,8 +19,8 @@ INSTALLED_APPS = [
 ]
 
 # CELERY
-CELERY_BROKER='redis://localhost:5103/0'
-CELERY_BACKEND='redis://localhost:5103/0'
+CELERY_BROKER='redis://localhost:6379/0'
+CELERY_BACKEND='redis://localhost:6379/0'
 
 CELERYBEAT_SCHEDULE = {
     'test-celery-sched': {

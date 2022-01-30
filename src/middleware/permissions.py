@@ -13,5 +13,5 @@ class APIPermission:
     def process_request(self, req, resp):
         token = req.headers.get('TOKEN', None)
 
-        if token != settings.SECRET_KEY:
-            raise falcon.HTTPUnauthorized()
+        # if token != settings.SECRET_KEY:
+        #     raise falcon.HTTPUnauthorized()
